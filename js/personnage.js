@@ -7,18 +7,18 @@ var personnage = function(race,age,nom,photo,metier){
 
 };
 
-var bellwether = new personnage("biquette",36,"Bellwether",,"assistante diabolique du maire");
+var bellwether = new personnage("biquette",36,"Bellwether","img/mairess.png","assistante diabolique du maire");
 
-var clawhauser = new personnage("guepard",19,"Benjamin Clawhauser",,"bouffeur de donuts");
+var clawhauser = new personnage("guepard",19,"Benjamin Clawhauser","img/clawhauser.png","bouffeur de donuts");
 
-var ramses = new personnage("bélier",28,"Doug Ramses",,"scientifique");
+var ramses = new personnage("bélier",28,"Doug Ramses","img/ramses.png","scientifique");
 
-var weaselton = new personnage("rat",22,"Duke Weaselton",,"voleur");
+var weaselton = new personnage("rat",22,"Duke Weaselton","img/weaselton.png","voleur");
 
-var flash = new personnage("paresseux",26,"Flash",,"travaille au département d’immatriculation des véhicules");
+var flash = new personnage("paresseux",26,"Flash","img/flash.png","travaille au département d’immatriculation des véhicules");
 
-var judy = new personnage("lapin",20,"Judy Hopps",,"policière");
+var judy = new personnage("lapin",20,"Judy Hopps","img/judy.png","policière");
 
-var bogo = new personnage("buffle",30,"Bogo",,"policier");
+var bogo = new personnage("buffle",30,"Bogo","img/bogo.png","policier");
 
-var wilde = new personnage("renard",26,"Nick Wilde",,"policier");
+var wilde = new personnage("renard",26,"Nick Wilde","img/wilde.png","policier");
