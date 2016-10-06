@@ -1,56 +1,78 @@
-var bellwether ='<h1> Nom: Bellwether</h1>' +
-    '<h2> Race: Biquette</h2>' +
-    '<img class="personnage" src="img/mairess.png" title="La mairess" />' +
+var bellwether = '<div class="col-xs-6 info">' +
+    '<img class="personnage" src="img/mairess1.png" title="La mairess" />' +
+    '</div>' +
+    '<div class="col-xs-6">' +
+    '<h1 class="title"> Nom: Bellwether</h1>' +
+    '<h2 class="sub_title"> Race: Biquette</h2>' +
     '<h4>Age: 36</h4>' +
     '<h3>Metier: Assistante diabolique du maire</h3>' +
     '<h5>Lieu: Bois de boulogne</h5>' +
-    '<a href="index.html" class="btn btn-primary">Capturer !</a>';
+    '<a href="index.html"><button class="btn">Capturer !</button></a>' +
+    '</div>';
+
 
 
 // méchant 1
 
-var ramses ='<h1> Nom: Doug Ramses</h1>' +
-    '<h2> Race: Bélier</h2>' +
-    '<img class="personnage" src="img/ramses.png" title="ramses" />' +
+var yax = '<div class="col-xs-6 info">' +
+    '<img class="personnage" src="img/Yax.png" title="yax" />' +
+    '</div>' +
+    '<div class="col-xs-6">' +
+    '<h1 class="title"> Nom: Yax</h1>' +
+    '<h2 class="sub_title"> Race: Bélier</h2>' +
     '<h4>Age: 28</h4>' +
-    '<h3>Metier: Scientifique</h3>' +
+    '<h3>Metier: Nudiste</h3>' +
     '<h5>Lieu: Fistinière</h5>' +
-    '<button class="btn">Capturer !</button>';
+    '<a href="index.html"><button class="btn">Capturer !</button></a>' +
+    '</div>';
 
 // méchant 2
 
-var weaselton ='<h1> Nom: Duke Weaselton</h1>' +
-    '<h2> Race: Rat</h2>' +
-    '<img class="personnage" src="img/weaselton.png" title="weaselton" />' +
-    '<h4>Age: 22</h4>' +
-    '<h3>Metier: voleur</h3>' +
-    '<h5>Lieu: Gros Cul, Sainte-Colombe-sur-Seine</h5>' +
-    '<button class="btn">Capturer !</button>';
+var lion = '<div class="col-xs-6 info">' +
+    '<img class="personnage" src="img/Lion.png" title="Dominique" />' +
+    '</div>' +
+    '<div class="col-xs-6">' +
+'<h1 class="title"> Nom: Dominique</h1>' +
+'<h2 class="sub_title"> Race: Lion</h2>' +
+'<h4>Age: 35</h4>' +
+'<h3>Metier: Maire</h3>' +
+'<h5>Lieu: Gros Cul, Sainte-Colombe-sur-Seine</h5>' +
+'<a href="index.html"><button class="btn">Capturer !</button></a>' +
+'</div>';
 
 // méchant 3
 
-var flash ='<h1> Nom: Flash</h1>' +
-    '<h2> Race: Paresseux</h2>' +
-    '<img class="personnage" src="img/flash.png" title="flash" />' +
+var flash = '<div class="col-xs-6 info">' +
+    '<img class="personnage" src="img/flash1.png" title="flash" />' +
+    '</div>' +
+    '<div class="col-xs-6">' +
+    '<h1 class="title"> Nom: Flash</h1>' +
+    '<h2 class="sub_title"> Race: Paresseux</h2>' +
     '<h4>Age: 26</h4>' +
     '<h3>Metier: travaille au département d’immatriculation des véhicules</h3>' +
     '<h5>Lieu: Futuroscope</h5>' +
-    '<button class="btn">Capturer !</button>';
+    '<a href="index.html"><button class="btn">Capturer !</button></a>' +
+    '</div>';
 
 // méchant 4
 
-var big ='<h1> Nom: Mister Big</h1>' +
-    '<h2> Race: Musaraigne</h2>' +
+var big = '<div class="col-xs-6 info">' +
     '<img class="personnage" src="img/big.png" title="big" />' +
+    '</div>' +
+    '<div class="col-xs-6">' +
+    '<h1 class="title"> Nom: Mister Big</h1>' +
+    '<h2 class="sub_title"> Race: Musaraigne</h2>' +
     '<h4>Age: 60</h4>' +
     '<h3>Metier: Chef de la mafia</h3>' +
-    '<button class="btn">Capturer !</button>';
+    '<h5>Lieu: Saint-Cosme-en-Vairais</h5>' +
+    '<a href="index.html"><button class="btn">Capturer !</button></a>' +
+    '</div>';
 
 //méchant 5
 
 function initialisation(){
     var map_info = {
-        zoom: 13,
+        zoom: 6,
         center: new google.maps.LatLng(48.8589507, 2.2775163)
     };
     var map = new google.maps.Map(document.getElementById("zootopie"), map_info);
@@ -80,7 +102,7 @@ function initialisation(){
         position: {lat: 47.8625239, lng: 4.5239774},
         map: map,
         icon: image,
-        title: "Weaselton"
+        title: "Lion"
     };
 
     // options marqueur 3
@@ -109,7 +131,7 @@ function initialisation(){
         content: bellwether
     };
 
-    var infoBulle1 = new google.maps.InfoWindow( optionsInfoBulle1 )
+    var infoBulle1 = new google.maps.InfoWindow( optionsInfoBulle1 );
 
     google.maps.event.addListener(marqueur1, 'click', function() {
         infoBulle1.open(map, marqueur1);
@@ -120,7 +142,7 @@ function initialisation(){
     var marqueur2 = new google.maps.Marker(optionsMarqueur2);
 
     var optionsInfoBulle2 = {
-        content: ramses
+        content: yax
     };
 
     var infoBulle2 = new google.maps.InfoWindow( optionsInfoBulle2 )
@@ -134,7 +156,7 @@ function initialisation(){
     var marqueur3 = new google.maps.Marker(optionsMarqueur3);
 
     var optionsInfoBulle3 = {
-        content: weaselton
+        content: lion
     };
 
     var infoBulle3 = new google.maps.InfoWindow( optionsInfoBulle3 )
@@ -148,7 +170,7 @@ function initialisation(){
     var marqueur4 = new google.maps.Marker(optionsMarqueur4);
 
     var optionsInfoBulle4 = {
-        content: weaselton
+        content: flash
     };
 
     var infoBulle4 = new google.maps.InfoWindow( optionsInfoBulle4 )
@@ -162,7 +184,7 @@ function initialisation(){
     var marqueur5 = new google.maps.Marker(optionsMarqueur5);
 
     var optionsInfoBulle5 = {
-        content: weaselton
+        content: big
     };
 
     var infoBulle5 = new google.maps.InfoWindow( optionsInfoBulle5 )
