@@ -43,7 +43,7 @@ var lion = '<div class="col-xs-6 info">' +
 // méchant 3
 
 var flash = '<div class="col-xs-6 info">' +
-    '<img class="personnage" src="img/flash1.png" title="flash" />' +
+    '<img class="personnage flash" src="img/flash1.png" title="flash" />' +
     '</div>' +
     '<div class="col-xs-6">' +
     '<h1 class="title"> Nom: Flash</h1>' +
@@ -57,7 +57,7 @@ var flash = '<div class="col-xs-6 info">' +
 // méchant 4
 
 var big = '<div class="col-xs-6 info">' +
-    '<img class="personnage" src="img/big.png" title="big" />' +
+    '<img class="personnage" src="img/mbig1.png" title="big" />' +
     '</div>' +
     '<div class="col-xs-6">' +
     '<h1 class="title"> Nom: Mister Big</h1>' +
