@@ -12,3 +12,29 @@
 	background-image: url("back.jpg");
 	height: 500px;
 }
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    color:#267AA8;
+    text-align:center;
+}
+
+#sub_title{
+    margin-bottom:1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: bold;
+    color:#FF9900;
+    text-align:center;
+}
+
+.personnage{
+    float: left;
+    width: 220px;
+    height: 163px;
+    margin: 0 1em 1em 0;
+}
