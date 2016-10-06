@@ -87,6 +87,11 @@ h3 {
     margin-right: auto;
 }
 
+.btn2{
+    display: block;
+    margin-right: 66px;
+}
+
 .fiches {
 	padding-left: 50px;
 	padding-right: 50px;
@@ -126,4 +131,14 @@ padding-bottom: 10px;
 
 .flash{
     width:250px;
+}
+
+.head_capture{
+    background-color: #59E3E2;
+}
+
+.capture{
+    background-color: #fff;
+    width:600px;
+    height:380px;
 }

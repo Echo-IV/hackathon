@@ -51,7 +51,7 @@ var flash = '<div class="col-xs-6 info">' +
     '<h4>Age: 26</h4>' +
     '<h3>Metier: travaille au département d’immatriculation des véhicules</h3>' +
     '<h5>Lieu: Futuroscope</h5>' +
-    '<a href="index.html"><button class="btn">Capturer !</button></a>' +
+    '<a href="index.html"><button class="btn btn2">Capturer !</button></a>' +
     '</div>';
 
 // méchant 4
