@@ -29,7 +29,6 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: #59E3E2;
-	height: 1000px;
 }
 
 .choix {
@@ -41,4 +40,49 @@ body {
 	font-size : 25px;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.map_size{
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+#zootopie {
+    height: 100%
+}
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    color:#267AA8;
+    text-align:center;
+}
+
+#sub_title{
+    margin-bottom:1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: bold;
+    color:#FF9900;
+    text-align:center;
+}
+
+.personnage{
+    float: left;
+    width: 220px;
+    height: 163px;
+    margin: 0 1em 1em 0;
+}
+
+.perso {
+	background-color: #00BBB3;
+	height: 350px;
+	margin-top: 30px;
+}
+
+.col-lg-offset-2 {
 }
