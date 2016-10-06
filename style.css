@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0
 }
-#zootopie{
+
+#zootopie {
     height: 100%
+}
+
+.head {
+	background-image: url("back.jpg");
+	height: 500px;
 }
