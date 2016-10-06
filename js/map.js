@@ -1,21 +1,3 @@
-/*
-function initialisation(){
-        var optionsCarte = {
-            zoom: 4,
-            center: new google.maps.LatLng(-33, 151)
-            // Remarque : Il est désormais possible de remplacer :
-            // center: new google.maps.LatLng(47.389982, 0.688877)
-            // par :
-            // center: {lat: 47.389982, lng: 0.688877}
-        };
-        var myMap = new google.maps.Map(document.getElementById("zootopie"), optionsCarte);
-    }
-
-  */
-
-    // ajout d'un méchant sur la map
-
-
 function initialisation() {
     var map = new google.maps.Map(document.getElementById('zootopie'), {
         zoom: 4,
