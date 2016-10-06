@@ -1,0 +1,5 @@
+var personnage = {
+    race:
+    age:
+    
+};
