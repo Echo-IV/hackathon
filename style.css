@@ -1,3 +1,47 @@
+body {
+	background-color: #00b99e;
+	color: white;
+}
+
+.principe {
+	display: inline;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Baloo Da', cursive;
+	color: rgb(50,50,50);
+}
+
+.annonce {
+	color: rgb(50,50,50);
+	font-family: 'Baloo Da', cursive;
+	display: inline;
+	text-align: center;
+	font-size : 25px;
+	padding-top: 20px;
+	background-color: #59E3E2;
+	border-radius: 20px 20px 0 0;
+}
+
+.fiches {
+	font-size : 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #59E3E2;
+}
+
+.choix {
+	color: rgb(50,50,50);
+	font-family: 'Baloo Da', cursive;
+	font-size: 20px;
+	display: inline;
+	text-align: center;
+	font-size : 25px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 .map_size{
     height: 100%;
     margin: 0;
@@ -6,11 +50,6 @@
 
 #zootopie {
     height: 100%
-}
-
-.head {
-	background-image: url("back.jpg");
-	height: 500px;
 }
 
 #title{
@@ -37,4 +76,13 @@
     width: 220px;
     height: 163px;
     margin: 0 1em 1em 0;
+}
+
+.perso {
+	background-color: #00BBB3;
+	height: 350px;
+	margin-top: 30px;
+}
+
+.col-lg-offset-2 {
 }
