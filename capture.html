@@ -60,12 +60,21 @@
 
 
 
-
+                var current ="";
 
                 if (aleatoire < 5) {
                     elem.style.left = pos + 'px';
+                    var current = "left";
+                    if(current == "left"){
+                        elem.style.right = pos + 'px';
+                    }
+
                 } else {
                     elem.style.right = pos + 'px';
+                    var current = "right";
+                    if(current == "right"){
+                        elem.style.left = pos - 'px';
+                    }
                 }
                 console.log(aleatoire);
             }
@@ -75,8 +84,49 @@
 
 
     var my_move = function() {
+        var aleatoire =  Math.floor((Math.random() * 10) + 1);
+
+        switch(aleatoire){
+
+            case 1:
+                $("#menottes").css({left:10});
+                break;
+            case 2:
+                $("#menottes").css({left:20});
+                break;
+            case 3:
+                $("#menottes").css({left:30});
+                break;
+            case 4:
+                $("#menottes").css({left:40});
+                break;
+            case 5:
+                $("#menottes").css({left:50});
+                break;
+            case 6:
+                $("#menottes").css({right:10});
+                break;
+            case 7:
+                $("#menottes").css({right:20});
+                break;
+            case 8:
+                $("#menottes").css({right:30});
+                break;
+            case 9:
+                $("#menottes").css({right:40});
+                break;
+            case 10:
+                $("#menottes").css({right:50});
+                break;
+
+            console.log(aleatoire);
+
+        }
+
+
 
         var elem = document.getElementById("menottes");
+
 
 
         var pos = 0;
