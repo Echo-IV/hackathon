@@ -150,7 +150,7 @@ function initialisation(){
 
     // options marqueur6
 
-    var heroh = 'clawhauserh.png';
+    var heroh = 'img/nickh.png';
 
     var optionsMarqueur7 = {
         position: {lat: 43.5224757, lng: -12.4814526},
