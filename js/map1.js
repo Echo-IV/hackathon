@@ -171,6 +171,11 @@ function initialisation(){
 
     google.maps.event.addListener(marqueur1, 'click', function() {
         infoBulle1.open(map, marqueur1);
+        infoBulle2.close(map, marqueur2);
+        infoBulle3.close(map, marqueur3);
+        infoBulle4.close(map, marqueur4);
+        infoBulle5.close(map, marqueur5);
+        infoBulle6.close(map, marqueur6);
     });
 
     // marqueur 2
@@ -185,6 +190,11 @@ function initialisation(){
 
     google.maps.event.addListener(marqueur2, 'click', function() {
         infoBulle2.open(map, marqueur2);
+        infoBulle1.close(map, marqueur1);
+        infoBulle3.close(map, marqueur3);
+        infoBulle4.close(map, marqueur4);
+        infoBulle5.close(map, marqueur5);
+        infoBulle6.close(map, marqueur6);
     });
 
     // marqueur 3
