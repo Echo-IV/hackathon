@@ -23,6 +23,7 @@
             </div>
             <div class="col-xs-6 capture">
 
+                <div class="text-center"><img id="menottes" src="img/handcuffs.png" alt=""></div>
             </div>
 
             <div class="col-xs-3 carac">
@@ -30,8 +31,61 @@
             </div>
 
         </div>
+        <button class="center-block" onclick="my_move()">Attrape moi si tu le peux !</button>
     </div>
+
 </div>
+<script>
+
+
+    var my_move = function() {
+
+        var elem = document.getElementById("menottes");
+
+        var pos = 0;
+
+        var interval = setInterval(frame, 10);
+
+        var cadre = document.getElementById('menottes'),
+                s = cadre.style, // Un petit raccourci
+                i = cadre.offsetLeft, // On récupère la position absolue initiale.
+                j = cadre.offsetTop;
+
+        function frame() {
+            if (pos == 324) {
+
+                clearInterval(interval);
+                alert("Pitoyable");
+            } else {
+
+                pos++;
+
+                elem.style.top = pos + 'px';
+            }
+        }
+
+        document.onkeydown = function(event){
+            i = cadre.offsetLeft;
+            var event = event || window.event,
+                    keyCode = event.keyCode;
+
+            switch(keyCode){
+
+                case 37:
+                    i = i-12;
+                    break;
+                case 39:
+                    i = i+12;
+                    break;
+            }
+            // Et enfin on applique les modifications :
+            s.left = String(i)+'px';
+            s.top = String(j)+'px';
+        }
+
+    }
+
+</script>
 <script src="jquery.js"></script>
 <script src="bootstrap.js"></script>
 </body>

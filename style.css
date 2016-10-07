@@ -139,6 +139,18 @@ padding-bottom: 10px;
 
 .capture{
     background-color: #fff;
+	position: relative;
     width:600px;
     height:380px;
+}
+
+#menottes{
+	position: absolute;
+	background:url(img/handcuffs.png);
+	width:64px;
+	height:64px;
+}
+
+#select_perso{
+	background:url(img/nick1.png);
 }
