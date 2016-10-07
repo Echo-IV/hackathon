@@ -23,7 +23,10 @@
             </div>
             <div class="col-xs-6 capture">
 
-                <div class="text-center"><img id="menottes" src="img/handcuffs.png" alt=""></div>
+                <div class="text-center">
+                    <img id="menottes" src="img/handcuffs.png" alt="">
+                    <img id="mechant1" src="img/Bogoh.png" alt="">
+                </div>
             </div>
 
             <div class="col-xs-3 carac">
@@ -31,16 +34,50 @@
             </div>
 
         </div>
-        <button class="center-block" onclick="my_move()">Attrape moi si tu le peux !</button>
+        <button class="center-block" onclick="move_villain(); my_move();">Attrape moi si tu le peux !</button>
+
+
     </div>
 
 </div>
 <script>
 
+    var move_villain = function() {
+        var aleatoire =  Math.floor((Math.random() * 10) + 1);
+        var elem = document.getElementById("mechant1");
+
+        var pos = 0;
+
+        var interval = setInterval(frame, 10);
+
+        function frame() {
+            if (pos == 350) {
+
+                clearInterval(interval);
+            } else {
+
+                pos++;
+
+
+
+
+
+                if (aleatoire < 5) {
+                    elem.style.left = pos + 'px';
+                } else {
+                    elem.style.right = pos + 'px';
+                }
+                console.log(aleatoire);
+            }
+        }
+    };
+
+
 
     var my_move = function() {
 
         var elem = document.getElementById("menottes");
+
 
         var pos = 0;
 
@@ -50,6 +87,9 @@
                 s = cadre.style, // Un petit raccourci
                 i = cadre.offsetLeft, // On récupère la position absolue initiale.
                 j = cadre.offsetTop;
+
+
+
 
         function frame() {
             if (pos == 324) {
