@@ -209,6 +209,11 @@ function initialisation(){
 
     google.maps.event.addListener(marqueur3, 'click', function() {
         infoBulle3.open(map, marqueur3);
+        infoBulle2.close(map, marqueur2);
+        infoBulle1.close(map, marqueur1);
+        infoBulle4.close(map, marqueur4);
+        infoBulle5.close(map, marqueur5);
+        infoBulle6.close(map, marqueur6);
     });
 
     //marqueur 4
@@ -223,6 +228,11 @@ function initialisation(){
 
     google.maps.event.addListener(marqueur4, 'click', function() {
         infoBulle4.open(map, marqueur4);
+        infoBulle2.close(map, marqueur2);
+        infoBulle1.close(map, marqueur1);
+        infoBulle3.close(map, marqueur3);
+        infoBulle5.close(map, marqueur5);
+        infoBulle6.close(map, marqueur6);
     });
 
     //marqueur 5
@@ -237,6 +247,11 @@ function initialisation(){
 
     google.maps.event.addListener(marqueur5, 'click', function() {
         infoBulle5.open(map, marqueur5);
+        infoBulle2.close(map, marqueur2);
+        infoBulle1.close(map, marqueur1);
+        infoBulle3.close(map, marqueur3);
+        infoBulle4.close(map, marqueur4);
+        infoBulle6.close(map, marqueur6);
     });
 
     var marqueur6 = new google.maps.Marker(optionsMarqueur6);
@@ -249,6 +264,11 @@ function initialisation(){
 
     google.maps.event.addListener(marqueur6, 'click', function() {
         infoBulle6.open(map, marqueur6);
+        infoBulle2.close(map, marqueur2);
+        infoBulle1.close(map, marqueur1);
+        infoBulle3.close(map, marqueur3);
+        infoBulle4.close(map, marqueur4);
+        infoBulle5.close(map, marqueur5);
     });
 
     var marqueur7 = new google.maps.Marker(optionsMarqueur7);
@@ -261,6 +281,7 @@ function initialisation(){
 
     google.maps.event.addListener(marqueur7, 'click', function() {
         infoBulle7.open(map, marqueur7);
+        
     });
 }
 
