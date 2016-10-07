@@ -1,3 +1,5 @@
+var user = document.getElementById('zootopie').innerHTML = '<div id="user"></div>';
+
 var bellwether = '<div class="col-xs-6 info">' +
     '<img class="personnage" src="img/mairess1.png" title="La mairess" />' +
     '</div>' +

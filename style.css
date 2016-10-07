@@ -49,6 +49,7 @@ body {
 
 #zootopie {
     height: 100%;
+
 }
 
 .title{
@@ -151,6 +152,6 @@ padding-bottom: 10px;
 	height:64px;
 }
 
-#select_perso{
-	background:url(img/nick1.png);
+#user{
+	background-color: red;
 }
