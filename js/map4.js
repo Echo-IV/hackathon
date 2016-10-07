@@ -9,7 +9,7 @@ var bellwether = '<div class="col-xs-6 info">' +
     '<h4>Age: 39</h4>' +
     '<h3>Metier: Adjointe du maire</h3>' +
     '<h5>Lieu: Bois de boulogne</h5>' +
-    '<a href="index.html"><button class="btn">CAPTURER !</button></a>' +
+    '<a href="capture5.html"><button class="btn">CAPTURER !</button></a>' +
     '</div>';
 
 
@@ -25,7 +25,7 @@ var yax = '<div class="col-xs-6 info">' +
     '<h4>Age: ???</h4>' +
     '<h3>Metier: Moine nudiste</h3>' +
     '<h5>Lieu: Fistinière</h5>' +
-    '<a href="index.html"><button class="btn">CAPTURER !</button></a>' +
+    '<a href="capture7.html"><button class="btn">CAPTURER !</button></a>' +
     '</div>';
 
 // méchant 2
@@ -39,7 +39,7 @@ var lion = '<div class="col-xs-6 info">' +
 '<h4>Age: 45</h4>' +
 '<h3>Metier: Maire</h3>' +
 '<h5>Lieu: Gros Cul, Sainte-Colombe-sur-Seine</h5>' +
-'<a href="index.html"><button class="btn">CAPTURER !</button></a>' +
+'<a href="capture4.html"><button class="btn">CAPTURER !</button></a>' +
 '</div>';
 
 // méchant 3
@@ -53,7 +53,7 @@ var flash = '<div class="col-xs-6 info">' +
     '<h4>Age: 35</h4>' +
     '<h3>Metier: travaille au département d’immatriculation des véhicules</h3>' +
     '<h5>Lieu: Futuroscope</h5>' +
-    '<a href="index.html"><button class="btn btn2">CAPTURER !</button></a>' +
+    '<a href="capture2.html"><button class="btn btn2">CAPTURER !</button></a>' +
     '</div>';
 
 // méchant 4
@@ -67,7 +67,7 @@ var big = '<div class="col-xs-6 info">' +
     '<h4>Age: 50</h4>' +
     '<h3>Metier: Baron de la pègre</h3>' +
     '<h5>Lieu: Saint-Cosme-en-Vairais</h5>' +
-    '<a href="index.html"><button class="btn">CAPTURER !</button></a>' +
+    '<a href="capture6.html"><button class="btn">CAPTURER !</button></a>' +
     '</div>';
 
 //méchant 5
@@ -81,7 +81,7 @@ var finnick = '<div class="col-xs-6 info">' +
     '<h4>Age: 30</h4>' +
     '<h3>Metier: Pick pocket</h3>' +
     '<h5>Lieu: Anus</h5>' +
-    '<a href="index.html"><button class="btn">CAPTURER !</button></a>' +
+    '<a href="capture3.html"><button class="btn">CAPTURER !</button></a>' +
     '</div>';
 
 //méchant 6

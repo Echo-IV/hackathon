@@ -49,7 +49,6 @@ body {
 
 #zootopie {
     height: 100%;
-
 }
 
 .title{
@@ -152,17 +151,24 @@ h3 {
 #mechant1{
 	position: absolute;
 	bottom:0;
-	background:url(img/Bogoh.png);
-	width:120px;
-	width:114px;
 }
 
 #user {
 	background-color: red;
 }
 
-.btn {
+.btn3 {
 	margin-top: 15px;
-	margin-left: -15%;
 	display: block;
+	border-radius: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;	
 }
