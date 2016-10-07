@@ -148,6 +148,14 @@ h3 {
 	height:64px;
 }
 
+#mechant1{
+	position: absolute;
+	bottom:0;
+	background:url(img/Bogoh.png);
+	width:120px;
+	width:114px;
+}
+
 #user {
 	background-color: red;
 }
