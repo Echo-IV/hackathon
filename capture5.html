@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 head_capture">
+           <img src="img/logo.png" height="500" class=" center-block img-responsive">
+        </div>
+    </div>
+
+  
+    <div class="row">
+        <div class="col-xs-12 fiches">
+            <div class="col-xs-3 carac">
+                <img class="center-block" src="img/judy2.png">
+            </div>
+            <div class="col-xs-6 capture">
+
+                <div class="text-center">
+                    <img id="menottes" src="img/handcuffs.png" alt="">
+                    <img id="mechant1" src="img/mairessh.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-xs-3 carac">
+                <img class="center-block" src="img/nickr.png">
+            </div>
+
+        </div>
+        <button class="center-block" onclick="move_villain(); my_move();">Attrape moi si tu le peux !</button>
+
+
+    </div>
+
+</div>
+<script>
+
+    var move_villain = function() {
+        var aleatoire =  Math.floor((Math.random() * 10) + 1);
+        var elem = document.getElementById("mechant1");
+
+        var pos = 0;
+
+        var interval = setInterval(frame, 10);
+
+        function frame() {
+            if (pos == 350) {
+
+                clearInterval(interval);
+            } else {
+
+                pos++;
+
+
+
+                var current ="";
+
+                if (aleatoire < 5) {
+                    elem.style.left = pos + 'px';
+                    var current = "left";
+                    if(current == "left"){
+                        elem.style.right = pos + 'px';
+                    }
+
+                } else {
+                    elem.style.right = pos + 'px';
+                    var current = "right";
+                    if(current == "right"){
+                        elem.style.left = pos - 'px';
+                    }
+                }
+                console.log(aleatoire);
+            }
+        }
+    };
+
+
+
+    var my_move = function() {
+        var aleatoire =  Math.floor((Math.random() * 10) + 1);
+
+        switch(aleatoire){
+
+            case 1:
+                $("#menottes").css({left:10});
+                break;
+            case 2:
+                $("#menottes").css({left:20});
+                break;
+            case 3:
+                $("#menottes").css({left:30});
+                break;
+            case 4:
+                $("#menottes").css({left:40});
+                break;
+            case 5:
+                $("#menottes").css({left:50});
+                break;
+            case 6:
+                $("#menottes").css({right:10});
+                break;
+            case 7:
+                $("#menottes").css({right:20});
+                break;
+            case 8:
+                $("#menottes").css({right:30});
+                break;
+            case 9:
+                $("#menottes").css({right:40});
+                break;
+            case 10:
+                $("#menottes").css({right:50});
+                break;
+
+            console.log(aleatoire);
+
+        }
+
+
+
+        var elem = document.getElementById("menottes");
+
+
+
+        var pos = 0;
+
+        var interval = setInterval(frame, 10);
+
+        var cadre = document.getElementById('menottes'),
+                s = cadre.style, // Un petit raccourci
+                i = cadre.offsetLeft, // On récupère la position absolue initiale.
+                j = cadre.offsetTop;
+
+
+
+
+        function frame() {
+            if (pos == 324) {
+
+                clearInterval(interval);
+                alert("Pitoyable");
+            } else {
+
+                pos++;
+
+                elem.style.top = pos + 'px';
+            }
+        }
+
+        document.onkeydown = function(event){
+            i = cadre.offsetLeft;
+            var event = event || window.event,
+                    keyCode = event.keyCode;
+
+            switch(keyCode){
+
+                case 37:
+                    i = i-12;
+                    break;
+                case 39:
+                    i = i+12;
+                    break;
+            }
+            // Et enfin on applique les modifications :
+            s.left = String(i)+'px';
+            s.top = String(j)+'px';
+        }
+
+    }
+
+</script>
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+</body>
+
+</html>
